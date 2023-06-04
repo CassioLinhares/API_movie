@@ -1,0 +1,21 @@
+{
+  "name": "api-movies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/nodemon/server.js"
+  },
+  "author": "Cássio Linhares",
+  "license": "ISC",
+  "description": "API developed as challenge of Rockeseat Explorer program",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "sqlite": "^4.2.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
