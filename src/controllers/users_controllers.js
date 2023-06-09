@@ -1,5 +1,6 @@
 const knex = require("../database/knex");
 const AppError = require("../utils/appError");
+const hash = require("bcryptjs");
 
 class userController{
     
@@ -14,6 +15,12 @@ class userController{
             throw new AppError('Please, name and password fields are mandatory');
         }
 
-        await knex("users").insert({name, email, password});
+        const hashedPassword = await hash(password, 8)
+
+        await knex("users").insert({name, email, hashedPassword});
+
+        response.status(201).json();
     }
 }
+
+module.exports = userController;
