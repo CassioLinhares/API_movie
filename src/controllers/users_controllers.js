@@ -56,6 +56,14 @@ class userController{
         await knex("users").update({name: user.name, email: user.email, password: user.password}).where("id", id);
         return response.json();
     }
+
+    async delete(request, response){
+        const { id } = request.params;  
+        
+        await knex("users").where("id", id).delete();
+
+        return response.json();
+    }
 }
 
 module.exports = userController;
