@@ -13,4 +13,3 @@ exports.up = knex => knex.schema.hasTable("users").then(exists => {
 })
 
 exports.down = knex => knex.schema.dropTable("users");
-
