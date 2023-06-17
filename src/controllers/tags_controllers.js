@@ -8,6 +8,14 @@ class tagsControllers{
 
         return response.json(tags)
     }
+
+    async delete(request, response){
+        const {id} = request.params;
+
+        await knex("tags").where({id: id}).delete();
+
+        return response.json();
+    }
 }
 
 module.exports = tagsControllers;
