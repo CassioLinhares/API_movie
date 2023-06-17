@@ -2,21 +2,19 @@
 
 Esta é uma aplicação em Node.js que permite cadastrar filmes e preencher algumas informações relacionadas a eles, como nome, descrição e nota. Além disso, é possível criar tags relacionadas a cada filme.
 
-## Informações
-
-📅 Data: **17.06.2023**
-🕛 Status do Projeto: **Em andamento⌛**
-
 ## Tecnologias Utilizadas
 
 A aplicação utiliza as seguintes tecnologias:
 
-- **Node.js**: plataforma de execução de código JavaScript no servidor.
+- **AppError**: biblioteca para tratamento de erros personalizados em Node.js.
+- **Beekeeper**: ferramenta de gerenciamento de bancos de dados SQL com interface gráfica.
 - **Express**: framework web rápido e minimalista para Node.js, utilizado para criar APIs e rotas.
 - **Knex.js**: biblioteca SQL query builder para Node.js, utilizada para interagir com o banco de dados.
+- **Insomnia**: aplicativo para testar e documentar APIs.
+- **Nodemon**: utilitário para monitoramento de alterações no código e reinicialização automática do servidor.
+- **SQLite3**: sistema de gerenciamento de banco de dados SQL leve e de fácil configuração.
 - **Criptografia de Senhas**: técnica utilizada para proteger as senhas dos usuários.
 - **Validação de E-mail**: recurso utilizado para verificar a validade dos endereços de e-mail fornecidos pelos usuários.
-- **SQLite3**: sistema de gerenciamento de banco de dados SQL leve e de fácil configuração.
 
 ## Funcionalidades
 
@@ -26,7 +24,7 @@ A aplicação oferece as seguintes funcionalidades:
 - Criação de tags relacionadas a cada filme.
 - Criptografia das senhas dos usuários para garantir a segurança.
 - Validação de e-mail para garantir que os endereços fornecidos sejam válidos.
-- Uso do recurso de cascade para garantir que uma tag será excluída caso o usuário opte por       excluir a nota relacionada a ela.
+- Uso do recurso de cascade para garantir que uma tag será excluída caso o usuário opte por excluir a nota relacionada a ela.
 
 ## Diagrama do Banco de Dados
 
@@ -59,8 +57,14 @@ Siga as instruções abaixo para configurar e executar a aplicação:
    npm start
    ```
 
-7. Acesse a aplicação através do navegador web utilizando o endereço `http://localhost:3000`.
+7. Acesse a aplicação através do navegador web utilizando o endereço `http://localhost:3333`.
+
+## Informações
+
+- 📆 **Data: 17/06/2023**
+- 🕛 **Status do Projeto: Em andamento**⏳
 
 ## Conclusão
 
-Esta aplicação em Node.js oferece uma forma simples e intuitiva de cadastrar filmes e adicionar informações relacionadas a eles, além de permitir a criação de tags. Utilizando tecnologias como Express, Knex.js, criptografia de senhas, validação de e-mail e SQLite3, a aplicação oferece segurança e eficiência na gestão de filmes. Sinta-se à vontade para explorar e utilizar essa aplicação para gerenciar sua coleção de filmes!
+Esta aplicação em Node.js oferece uma forma simples e intuitiva de cadastrar filmes e adicionar informações relacionadas a eles, além de permitir a criação de tags. Utilizando tecnologias como AppError, Express, Knex.js, Nodemon, SQLite3, criptografia de senhas e validação de e-mail, a aplicação oferece segurança e eficiência na gestão de filmes. Sinta-se à vontade para explorar e utilizar essa aplicação para gerenciar sua coleção de filmes!
+
