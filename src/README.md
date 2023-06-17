@@ -1,8 +1,8 @@
-# Aplicação de Cadastro de Filmes
+# Aplicação de Cadastro de Filmes 🎬
 
 Esta é uma aplicação em Node.js que permite cadastrar filmes e preencher algumas informações relacionadas a eles, como nome, descrição e nota. Além disso, é possível criar tags relacionadas a cada filme.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas 🚀
 
 A aplicação utiliza as seguintes tecnologias:
 
@@ -16,7 +16,7 @@ A aplicação utiliza as seguintes tecnologias:
 - **Criptografia de Senhas**: técnica utilizada para proteger as senhas dos usuários.
 - **Validação de E-mail**: recurso utilizado para verificar a validade dos endereços de e-mail fornecidos pelos usuários.
 
-## Funcionalidades
+## Funcionalidades ⚙️
 
 A aplicação oferece as seguintes funcionalidades:
 
@@ -26,13 +26,13 @@ A aplicação oferece as seguintes funcionalidades:
 - Validação de e-mail para garantir que os endereços fornecidos sejam válidos.
 - Uso do recurso de cascade para garantir que uma tag será excluída caso o usuário opte por excluir a nota relacionada a ela.
 
-## Diagrama do Banco de Dados
+## Diagrama do Banco de Dados 📊
 
 A seguir, está o diagrama do banco de dados utilizado na aplicação:
 
 ![Diagrama do Banco de Dados](https://efficient-sloth-d85.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F37f55645-bc5d-4666-8b5c-d2fba08ef73b%2FUntitled.png?id=cbf9ad4e-2f3b-4867-aace-2cedba55bc1e&table=block&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=2000&userId=&cache=v2)
 
-## Configuração
+## Configuração ⚙️
 
 Siga as instruções abaixo para configurar e executar a aplicação:
 
@@ -59,18 +59,18 @@ Siga as instruções abaixo para configurar e executar a aplicação:
 
 7. Acesse a aplicação através do navegador web utilizando o endereço `http://localhost:3333`.
 
-## Testando as Rotas
+## Testando as Rotas 🧪
 Recomenda-se o uso do aplicativo **Insomnia** para testar e documentar as APIs da aplicação. Você pode importar o arquivo **insomnia.json** disponível no projeto para ter acesso às configurações prontas de teste das rotas.
 
-## Gerenciamento do Banco de Dados
+## Gerenciamento do Banco de Dados 💾
 Recomenda-se o uso da ferramenta **Beekeeper** para gerenciar o banco de dados SQLite3 da aplicação. Com ela, você pode visualizar, editar e executar consultas no banco de dados.
 
-## Informações
+## Informações 📋
 
 - 📆 **Data: 17/06/2023**
 - 🕛 **Status do Projeto: Em andamento**⏳
 
-## Conclusão
+## Conclusão ✔️
 
 Esta aplicação em Node.js oferece uma forma simples e intuitiva de cadastrar filmes e adicionar informações relacionadas a eles, além de permitir a criação de tags. Utilizando tecnologias como AppError, Express, Knex.js, Nodemon, SQLite3, criptografia de senhas e validação de e-mail, a aplicação oferece segurança e eficiência na gestão de filmes. Sinta-se à vontade para explorar e utilizar essa aplicação para gerenciar sua coleção de filmes!
 
