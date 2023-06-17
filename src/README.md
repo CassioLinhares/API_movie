@@ -59,6 +59,12 @@ Siga as instruções abaixo para configurar e executar a aplicação:
 
 7. Acesse a aplicação através do navegador web utilizando o endereço `http://localhost:3333`.
 
+## Testando as Rotas
+Recomenda-se o uso do aplicativo **Insomnia** para testar e documentar as APIs da aplicação. Você pode importar o arquivo **insomnia.json** disponível no projeto para ter acesso às configurações prontas de teste das rotas.
+
+## Gerenciamento do Banco de Dados
+Recomenda-se o uso da ferramenta **Beekeeper** para gerenciar o banco de dados SQLite3 da aplicação. Com ela, você pode visualizar, editar e executar consultas no banco de dados.
+
 ## Informações
 
 - 📆 **Data: 17/06/2023**
