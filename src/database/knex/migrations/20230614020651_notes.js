@@ -1,3 +1,4 @@
+
 exports.up = knex => knex.schema.createTable('notes', table =>{
     table.increments('id').primary();
     table.text('title');

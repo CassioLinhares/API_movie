@@ -11,6 +11,8 @@
   "description": "API developed as challenge of Rockeseat Explorer program",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
     "knex": "^2.4.2",

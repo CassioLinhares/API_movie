@@ -60,7 +60,7 @@ class notesController {
                 "notes.rating"
             ]) //extra information coming from "notes"
             .where("notes.user_id", user_id)
-            .whereLike("notes.title", `%${title}%`)
+            .whereLike("title", `%${title}%`)
             .whereIn("name", mapTags)//check inside field "name" exist the my tags.
             .innerJoin("notes", "notes.id", "tags.notes_id")//connection with table notes
             .orderBy("notes.title");
