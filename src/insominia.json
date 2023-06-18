@@ -1,15 +1,15 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2023-06-17T19:13:49.002Z",
+    "__export_date": "2023-06-18T19:42:50.693Z",
     "__export_source": "insomnia.desktop.app:v2023.1.0",
     "resources": [
         {
             "_id": "req_659371eacc0f4cc8ae6ba904a8d45cc5",
             "parentId": "fld_6c5c28b71762465b92d6024660291cf2",
-            "modified": 1687024610221,
+            "modified": 1687117228428,
             "created": 1687023354654,
-            "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/3",
+            "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/1",
             "name": "delete",
             "description": "",
             "method": "DELETE",
@@ -58,7 +58,7 @@
         {
             "_id": "req_8414a0d4482f4e67a74eaa075a098c6d",
             "parentId": "fld_6c5c28b71762465b92d6024660291cf2",
-            "modified": 1686871750625,
+            "modified": 1687117231829,
             "created": 1686871677982,
             "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/1",
             "name": "index",
@@ -89,7 +89,7 @@
         {
             "_id": "req_b04a3fb557144238ad23770e074adc28",
             "parentId": "fld_39dd4872c71b49b482ff7975c5d8e237",
-            "modified": 1686869537231,
+            "modified": 1687117250109,
             "created": 1686793620054,
             "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}",
             "name": "index",
@@ -106,13 +106,13 @@
                 {
                     "id": "pair_7d7d376009074fb0b20e906f502a9a49",
                     "name": "title",
-                    "value": "",
+                    "value": "Interstellar",
                     "description": ""
                 },
                 {
                     "id": "pair_29faf1168b0f424c9ff5d8afd8ce570e",
                     "name": "tags",
-                    "value": "Romance",
+                    "value": "Ficção científica",
                     "description": ""
                 }
             ],
@@ -149,7 +149,7 @@
         {
             "_id": "req_244f19667da7425da85a27a7a67e7b77",
             "parentId": "fld_39dd4872c71b49b482ff7975c5d8e237",
-            "modified": 1686782422027,
+            "modified": 1687117258453,
             "created": 1686782367984,
             "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/1",
             "name": "delete",
@@ -172,7 +172,7 @@
         {
             "_id": "req_b10186ae98e94165984e286611dd8b3b",
             "parentId": "fld_39dd4872c71b49b482ff7975c5d8e237",
-            "modified": 1686785692167,
+            "modified": 1687117266321,
             "created": 1686710571638,
             "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/1",
             "name": "show",
@@ -203,7 +203,7 @@
         {
             "_id": "req_8f6d435b88694ca2b9a3bb3e53fff893",
             "parentId": "fld_39dd4872c71b49b482ff7975c5d8e237",
-            "modified": 1686869470322,
+            "modified": 1687117271146,
             "created": 1686698446124,
             "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/1",
             "name": "create",
@@ -211,7 +211,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"title\": \"A culpa é das estrelas\",\n\t\"description\": \"casal se apaixona\",\n\t\"rating\": \"4\",\n\t\"tags\": [\"Romance\"]\n}"
+                "text": "{\n\t\"title\": \"Interstellar\",\n\t\"description\": \"Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta.\",\n\t\"rating\": \"4.6\",\n\t\"tags\": [\"Ficção científica\", \"Drama\"]\n}"
             },
             "parameters": [],
             "headers": [
@@ -234,9 +234,9 @@
         {
             "_id": "req_83fb43e239e34958b8c30e857acb7213",
             "parentId": "fld_8687c7d38f2c43a38b22eed19fe16cb7",
-            "modified": 1686708714473,
+            "modified": 1687114457145,
             "created": 1686617038275,
-            "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/3",
+            "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/1",
             "name": "delete",
             "description": "",
             "method": "DELETE",
@@ -275,15 +275,15 @@
         {
             "_id": "req_0dc2f5850b094a729087381935d1330d",
             "parentId": "fld_8687c7d38f2c43a38b22eed19fe16cb7",
-            "modified": 1686708681964,
+            "modified": 1687114450738,
             "created": 1686511319501,
-            "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/3",
+            "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}/1",
             "name": "update",
             "description": "",
             "method": "PUT",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"name\": \"Mateus\",\n\t\"email\": \"mateus@gmail.com\",\n\t\"password\": \"123\",\n\t\"oldPassword\": \"1234\"\n}"
+                "text": "{\n\t\"name\": \"ciclano\",\n\t\"email\": \"ciclano@gmail.com\",\n\t\"password\": \"1234\",\n\t\"oldPassword\": \"123\"\n}"
             },
             "parameters": [],
             "headers": [
@@ -306,7 +306,7 @@
         {
             "_id": "req_f9a6dcc049d44b55acc9a0c1f920efd0",
             "parentId": "fld_8687c7d38f2c43a38b22eed19fe16cb7",
-            "modified": 1686793340923,
+            "modified": 1687114485268,
             "created": 1686318472360,
             "url": "{{ _.BASE_URL }}/{{ _.RESOURCE }}",
             "name": "create",
@@ -314,7 +314,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"name\": \"mateus\",\n\t\"email\": \"mateus@gmail.com\",\n\t\"password\": \"123\"\n}"
+                "text": "{\n\t\"name\": \"fulano\",\n\t\"email\": \"fulano@gmail.com\",\n\t\"password\": \"123\"\n}"
             },
             "parameters": [],
             "headers": [
