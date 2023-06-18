@@ -67,7 +67,7 @@ Recomenda-se o uso da ferramenta **Beekeeper** para gerenciar o banco de dados S
 
 ## Informações 📋
 
-- 📆 **Data: 17/06/2023**
+- 📆 **Data: 18/06/2023**
 - 🕛 **Status do Projeto: Em andamento**⏳
 
 ## Conclusão ✔️
