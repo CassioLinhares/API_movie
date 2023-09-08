@@ -24,9 +24,9 @@ class userController{
 
     async update(request, response){
         const { name, email, password, oldPassword } = request.body;
-        const { id } = request.params;
+        const user_id = request.user.id;
 
-        const user = await knex("users").where("id", id).first();
+        const user = await knex("users").where("id", user_id).first();
 
         if (!user || user.length === 0) {
             throw new AppError("This user does not exist!");
@@ -53,14 +53,15 @@ class userController{
             user.password = await hash(password, 8);
         }
 
-        await knex("users").update({name: user.name, email: user.email, password: user.password}).where("id", id);
+        await knex("users")
+        .update({name: user.name, email: user.email, password: user.password}).where("id", user_id);
         return response.json();
     }
 
     async delete(request, response){
-        const { id } = request.params;  
+        const user_id = request.user.id;  
         
-        await knex("users").where("id", id).delete();
+        await knex("users").where("id", user_id).delete();
 
         return response.json();
     }

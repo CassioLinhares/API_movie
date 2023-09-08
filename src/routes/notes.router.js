@@ -4,7 +4,10 @@ const notesRouter = Router();
 const NotesController = require("../controllers/notes_controllers");
 const notesController = new NotesController();
 
-notesRouter.post("/:user_id", notesController.create);
+const ensureAuthenticated = require("../middleware/ensureAuthenticated");
+notesRouter.use(ensureAuthenticated);
+
+notesRouter.post("/", notesController.create);
 notesRouter.get("/:id", notesController.show);
 notesRouter.delete("/:id", notesController.delete);
 notesRouter.get("/", notesController.index);

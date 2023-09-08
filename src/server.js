@@ -1,17 +1,19 @@
 require("express-async-errors");
-const AppError = require("./utils/appError");
-
+const uploadConfig = require("./config/upload");
 const database = require("./database/sqlite");
-database();
-
+const AppError = require("./utils/appError");
 const express = require("express");
+const routes = require("./routes");
+const cors = require("cors")
+
 const app = express();
 
-const routes = require("./routes");
-
+app.use(cors());
 app.use(express.json());
 app.use(routes);
+app.use("/files", express.static(uploadConfig.UPLOAD_FOLDER));
 
+database();
 
 app.use((error, request, response, next) => { //error of client
     if (error instanceof AppError) { // if the error comes from appError
