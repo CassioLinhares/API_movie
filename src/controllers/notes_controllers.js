@@ -28,8 +28,9 @@ class notesController {
     async show(request, response) {
         const { id } = request.params;
 
-        const notes = await knex("notes").where({ user_id: id }).first();
-        const tags = await knex("tags").where({ user_id: id }).orderBy("name");
+        const notes = await knex("notes")
+        .where({ id }).first();
+        const tags = await knex("tags").where({ notes_id: id }).orderBy("name");
 
         return response.json({
             ...notes, tags
@@ -61,15 +62,15 @@ class notesController {
                 "notes.rating"
             ]) //extra information coming from "notes"
             .where("notes.user_id", user_id)
-            .whereLike("title", `%${title}%`)
-            .whereIn("name", mapTags)//check inside field "name" exist the my tags.
+            .where("notes.title", "LIKE", `%${title}%`)
+            .whereIn("tags.name", mapTags)//check inside field "name" exist the my tags.
             .innerJoin("notes", "notes.id", "tags.notes_id")//connection with table notes
-            .orderBy("notes.title");
+            .groupBy("notes.id");
 
         } else {
             notes = await knex("notes")
                 .where({ user_id })
-                .whereLike("title", `%${title}%`)
+                .where("title", "LIKE", `%${title}%`)
                 .orderBy("title");
         }
 
@@ -79,7 +80,7 @@ class notesController {
             const notesTags = allTagsUser.filter(tag => tag.notes_id === note.id);
             return {
                 ...note,
-                tag: notesTags
+                tags: notesTags
             }
         })
 
