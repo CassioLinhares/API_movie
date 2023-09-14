@@ -1,4 +1,5 @@
 require("express-async-errors");
+require("dotenv/config");//handles sensitive data
 const uploadConfig = require("./config/upload");
 const database = require("./database/sqlite");
 const AppError = require("./utils/appError");
@@ -32,5 +33,5 @@ app.use((error, request, response, next) => { //error of client
 
 });
 
-const Port = 3333;
+const Port = process.env.PORT || 3333;
 app.listen(Port, () => console.log(`API is running on Port ${Port}`));
